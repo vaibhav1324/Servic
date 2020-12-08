@@ -1,0 +1,84 @@
+{
+  "name": "Technician",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "plop": "plop",
+    "gradle-clean": "cd android && gradlew clean && cd ..",
+    "pod": "cd ios && pod install && cd ..",
+    "android": "npx react-native run-android",
+    "ios": "npx react-native run-ios",
+    "start": "react-native start",
+    "test": "jest",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
+  },
+  "dependencies": {
+    "@react-native-community/async-storage": "^1.12.1",
+    "@react-native-community/masked-view": "^0.1.10",
+    "@react-navigation/native": "^5.8.10",
+    "@react-navigation/stack": "^5.12.8",
+    "axios": "^0.21.0",
+    "date-fns": "^2.16.1",
+    "formik": "^2.2.5",
+    "plop": "^2.7.4",
+    "qs": "^6.9.4",
+    "ramda": "^0.27.1",
+    "react": "16.13.1",
+    "react-native": "0.63.3",
+    "react-native-config": "^1.4.1",
+    "react-native-gesture-handler": "^1.9.0",
+    "react-native-image-crop-picker": "^0.35.1",
+    "react-native-modal": "^11.5.6",
+    "react-native-reanimated": "^1.13.2",
+    "react-native-safe-area-context": "^3.1.9",
+    "react-native-screens": "^2.15.0",
+    "react-query": "^2.26.4",
+    "yup": "^0.32.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.4",
+    "@babel/runtime": "^7.8.4",
+    "@react-native-community/eslint-config": "^1.1.0",
+    "@types/axios": "^0.14.0",
+    "@types/jest": "^25.2.3",
+    "@types/qs": "^6.9.5",
+    "@types/ramda": "^0.27.32",
+    "@types/react-native": "^0.63.2",
+    "@types/react-test-renderer": "^16.9.2",
+    "@types/yup": "^0.29.10",
+    "@typescript-eslint/eslint-plugin": "^2.27.0",
+    "@typescript-eslint/parser": "^2.27.0",
+    "babel-jest": "^25.1.0",
+    "babel-plugin-module-resolver": "^4.0.0",
+    "eslint": "^6.5.1",
+    "eslint-config-airbnb-typescript": "^12.0.0",
+    "eslint-config-prettier": "^7.0.0",
+    "eslint-config-react": "^1.1.7",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "jest": "^25.1.0",
+    "metro-react-native-babel-preset": "^0.64.0",
+    "prettier": "^2.2.1",
+    "react-test-renderer": "16.13.1",
+    "typescript": "^3.8.3"
+  },
+  "jest": {
+    "preset": "react-native",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ]
+  },
+  "lint-staged": {
+    "src/*.{js,jsx,ts,tsx}": [
+      "./node_modules/.bin/eslint --fix"
+    ],
+    "src/*.{css,json, md}": [
+      "prettier --write"
+    ]
+  }
+}
