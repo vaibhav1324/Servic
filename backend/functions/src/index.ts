@@ -4,8 +4,6 @@ import firebase from "firebase";
 import expressServer from "./api/expressServer";
 import "reflect-metadata";
 
-const serviceAccount = require("../privateKeys/servic_keys.json");
-
 const firebaseConfig = {
   apiKey: process.env.FIREBASE_API_KEY,
   authDomain: "servic-v2.firebaseapp.com",
@@ -16,13 +14,13 @@ const firebaseConfig = {
 };
 
 admin.initializeApp({
-  credential: admin.credential.cert(serviceAccount),
+  credential: admin.credential.applicationDefault(),
   storageBucket: firebaseConfig.storageBucket,
 });
 
 firebase.initializeApp(firebaseConfig);
 
-export const webApi = functions.https.onRequest(
+export const webApi = functions.region('asia-south1').https.onRequest(
   expressServer({
     firebaseAdmin: admin,
     firebase: firebase,
