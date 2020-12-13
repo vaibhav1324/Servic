@@ -1,12 +1,12 @@
 {
   "name": "functions",
   "scripts": {
-    "lint": "./node_modules/tslint/bin/tslint --project tsconfig.json",
-    "build": "./node_modules/typescript/bin/tsc --skipLibCheck",
+    "lint": "./node_modules/.bin/tslint --project tsconfig.json",
+    "build": "./node_modules/.bin/tsc --skipLibCheck",
     "serve": "npm run build && firebase emulators:start --only functions",
     "shell": "npm run build && firebase functions:shell",
     "start": "npm run shell",
-    "deploy": "firebase deploy --only functions",
+    "deploy": "npm run build && firebase deploy --only functions",
     "logs": "firebase functions:log"
   },
   "engines": {
