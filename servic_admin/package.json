@@ -1,0 +1,78 @@
+{
+  "name": "servic_admin",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@chakra-ui/react": "^1.0.3",
+    "@emotion/react": "^11.1.2",
+    "@emotion/styled": "^11.0.0",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "@types/jest": "^26.0.15",
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
+    "axios": "^0.21.0",
+    "date-fns": "^2.16.1",
+    "formik": "^2.2.6",
+    "framer-motion": "^2.9.5",
+    "qs": "^6.9.4",
+    "ramda": "^0.27.1",
+    "react": "^17.0.1",
+    "react-calendar": "^3.2.1",
+    "react-dom": "^17.0.1",
+    "react-dropzone": "^11.2.4",
+    "react-flatpickr": "^3.10.6",
+    "react-helmet": "^6.1.0",
+    "react-icons": "^4.1.0",
+    "react-query": "^2.26.4",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "4.0.1",
+    "web-vitals": "^0.2.4",
+    "yup": "^0.32.8"
+  },
+  "scripts": {
+    "plop": "plop",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@types/node": "^14.14.12",
+    "@types/qs": "^6.9.5",
+    "@types/react-dropzone": "^5.1.0",
+    "@types/react-flatpickr": "^3.8.1",
+    "@types/react-helmet": "^6.1.0",
+    "@types/react-router-dom": "^5.1.6",
+    "@types/yup": "^0.29.10",
+    "@typescript-eslint/eslint-plugin": "^4.9.1",
+    "@typescript-eslint/parser": "^4.9.1",
+    "env-cmd": "^10.1.0",
+    "eslint-config-prettier": "^7.0.0",
+    "eslint-config-react": "^1.1.7",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-prettier": "^3.2.0",
+    "plop": "^2.7.4",
+    "prettier": "^2.2.1",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.1.3"
+  }
+}
